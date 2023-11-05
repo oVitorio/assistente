@@ -1,15 +1,16 @@
 {
     "version": 2,
+    "name": "portfolio-v1",
     "builds": [
-        {
-            "src": "./server.index",
-            "use": "@vercel/node"
-        }
+       {
+         "src": "package.json",
+         "use": "@vercel/node"
+       }
     ],
     "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/"
-        }
+       {
+         "src": "/(.*)",
+         "dest": "/"
+       }
     ]
-  }
+   }
